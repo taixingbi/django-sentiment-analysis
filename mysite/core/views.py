@@ -120,12 +120,14 @@ class Demo():
         if request.method == 'POST':
             print("POST")
 
-            vs= Vader().score("bad")
+            data = json.loads(request.body) 
+            text= data["text"]
 
+            vs= Vader().score(text)
 
-            data= {
-                "method": "POST",
-            }
+            # data= {
+            #     "method": "POST",
+            # }
             
             return JsonResponse(vs)
 

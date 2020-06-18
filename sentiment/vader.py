@@ -17,6 +17,7 @@ class Vader:
         del vs['pos']
         del vs['neu']
         del vs['neg']
+        print(vs)
 
         return vs
 

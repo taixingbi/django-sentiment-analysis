@@ -37,7 +37,6 @@ docker-compose up
 
 python manage.py runserver 0.0.0.0:8083
 http://localhost:8000/
-http://3.230.163.203:8083/test
 
 
 ### access container
